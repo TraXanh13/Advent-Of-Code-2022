@@ -2,7 +2,7 @@ from array import *
 
 currCal = 0
 
-f = open("elf-calories.txt", "r")
+f = open("Day_1\elf-calories.txt", "r")
 
 # Create an array of 3 elements, all initialized to 0
 top3 = []

@@ -1,7 +1,7 @@
 mostCal = 0
 currCal = 0
 
-f = open("elf-calories.txt", "r")
+f = open("Day_1\elf-calories.txt", "r")
 
 for x in f:
     if (x == '\n'):
