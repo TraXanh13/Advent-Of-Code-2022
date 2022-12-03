@@ -4,10 +4,10 @@
 Each compartment should contain unique values (both sides can't have the same letter)
 '''
 
+import itertools as it
 f = open('Day_3\input.txt', 'r')
 # f = open('Day_3\example.txt', 'r')
 
-''' PART 1'''
 dups = []
 letterErrs = {}
 letterErrs = set()
@@ -34,7 +34,7 @@ def checkSimilar(ln1, ln2):
 def getLetterVal():
     totalScore = 0
     for x in letterErrs:
-        if (ord(x) >= 97):
+        if (x.islower()):
             totalScore += ord(x) - ord('a') + 1
         else:
             totalScore += ord(x) - ord('A') + 27
@@ -43,13 +43,5 @@ def getLetterVal():
     return totalScore
 
 
-''' PART 2 '''
-
-
-def pt2():
-    print("hi")
-
-
 if __name__ == '__main__':
-    # pt1()
-    pt2()
+    pt1()
